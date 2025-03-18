@@ -9,7 +9,7 @@
     },
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/GLogo1.png",
+    "icon": "./assets/images/Glogo2.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
