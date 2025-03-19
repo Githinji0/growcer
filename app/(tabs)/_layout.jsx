@@ -34,17 +34,17 @@ const _layout = () => {
         }}>
             <Tabs.Screen name="home" options={{
                 tabBarIcon: ({ color, size }) => (
-                    <Entypo name="home" size={24} color={COLORS.GRAY} />
+                    <Entypo name="home" size={24} color={COLORS.BLACK} />
                 )
             }} />
             <Tabs.Screen name="favourite" options={{
                 tabBarIcon: ({ color, size }) => (
-                    <AntDesign name="heart" size={24} color={COLORS.GRAY}/>
+                    <AntDesign name="heart" size={24} color={COLORS.BLACK}/>
                 )
             }} />
             <Tabs.Screen name="profile" options={{
                 tabBarIcon: ({ color, size }) => (
-                <FontAwesome name="user" size={24} color={COLORS.GRAY} />
+                <FontAwesome name="user" size={24} color={COLORS.BLACK} />
                 )
             }} />
         </Tabs>

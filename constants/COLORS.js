@@ -11,6 +11,7 @@ const COLORS = {
   BLACK: "#212121",
   GRAY: "#9E9E9E",
   LIGHT_GRAY: "#F5F5F5",
+  RED: "#DC143C",
 };
 
 export default COLORS;

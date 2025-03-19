@@ -13,7 +13,7 @@ export default function RootLayout() {
     headerTitleStyle: {
       fontWeight: "bold",
       fontSize: 20,
-      color: COLORS.GRAY
+      color: COLORS.BLACK
       
     },
     contentStyle: {
@@ -23,7 +23,7 @@ export default function RootLayout() {
     },
     headerRight: () => (
       <TouchableOpacity>
-        <Ionicons name="cart-outline" size={24} color={COLORS.GRAY} style={{ marginRight: 15 }} />
+        <Ionicons name="cart-outline" size={24} color={COLORS.BLACK} style={{ marginRight: 15 }} />
       </TouchableOpacity>
     ),
   }}
