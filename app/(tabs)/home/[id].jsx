@@ -9,10 +9,6 @@ const List = () => {
   const { id } = useLocalSearchParams();
   const numericId = Number(id);
 
-  console.log("Received ID:", id);
-  console.log("Converted to Number:", numericId);
-  console.log("All products:", Object.values(PRODUCTS).flat());
-
   const product = Object.values(PRODUCTS).flat().find(product => product.id === numericId);
 
   if (!product) {
