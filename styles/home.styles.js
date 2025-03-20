@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
         textAlign: 'center',
+        color: COLORS.MEDIUM_GREEN,
     },
     userEmail:{
         fontSize: 20,
@@ -161,6 +162,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         marginBottom: 10,
         textAlign: 'center',
+        letterSpacing: 2
     },
     editButton: {
         backgroundColor: COLORS.EXTRA_LIGHT_GREEN,
@@ -224,6 +226,13 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         paddingHorizontal: 20,
         justifyContent: 'center',
+      },
+      productImage:{
+        width: 100,
+        height: 100,
+        marginBottom: 10,
+        alignSelf: 'center',
+        objectFit: 'center',
       }
 })
 

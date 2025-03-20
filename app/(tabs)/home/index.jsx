@@ -16,7 +16,7 @@ const Home = () => {
           data={PRODUCTS.vegetables}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <ProductCard name={item.name} price={item.price} image={item.image} />
+            <ProductCard name={item.name} price={item.price} image={item.image} id={item.id}/>
           )}
           horizontal ={true}
           showsHorizontalScrollIndicator={false}
@@ -29,7 +29,7 @@ const Home = () => {
           data={PRODUCTS.fruits}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <ProductCard name={item.name} price={item.price} image={item.image} />
+            <ProductCard name={item.name} price={item.price} image={item.image} id={item.id} />
           )}
           horizontal ={true}
           showsHorizontalScrollIndicator={false}
@@ -42,7 +42,7 @@ const Home = () => {
           data={PRODUCTS.other}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <ProductCard name={item.name} price={item.price} image={item.image} />
+            <ProductCard name={item.name} price={item.price} image={item.image} id={item.id}/>
           )}
           horizontal ={true}
           showsHorizontalScrollIndicator={false}

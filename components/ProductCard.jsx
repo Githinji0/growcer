@@ -1,15 +1,18 @@
-import { View, Text, Image, Pressable, StyleSheet } from "react-native";
+import { View, Text, Image, Pressable, StyleSheet, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { useState } from "react";
 import styles from "../styles/home.styles";
+import { useRouter } from "expo-router";
 
-const ProductCard = ({ name, price, image }) => {
+const ProductCard = ({ name, price, image,id }) => {
   const [isLiked, setIsLiked] = useState(false);
 
   const toggleLike = () => setIsLiked(!isLiked);
+  console.log(id)
+  const router = useRouter()
 
   return (
-    <View style={styles.contentContainer}>
+    <TouchableOpacity style={styles.contentContainer} onPress={()=>router.push(`/home/${id}`)}>
 
       <Pressable style={styles.heartIcon} onPress={toggleLike}>
         <AntDesign name={isLiked ? "heart" : "hearto"} size={24} color={isLiked ? "green" : "black"} />
@@ -26,7 +29,7 @@ const ProductCard = ({ name, price, image }) => {
       <Pressable style={styles.addToCartBtn}>
         <Text style={styles.addToCartText}>Add to Cart</Text>
       </Pressable>
-    </View>
+    </TouchableOpacity>
   );
 };
 
