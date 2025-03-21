@@ -27,13 +27,18 @@ const FavoriteCard = ({ name, price, image, id, onRemove }) => {
             gap: 10,
             alignItems: "center",
             width: "94%",
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.1,
+            shadowRadius: 4,
+            elevation: 2,
 
 
         }} onPress={() => router.push(`/home/${id}`)}>
             <Pressable  onPress={() => {
                 handleRemove
             }}>
-                <AntDesign name="heart" size={24} color="red" />
+                <AntDesign name="heart" size={24} color="green" />
             </Pressable>
 
             <Image source={image} style={{
@@ -41,7 +46,6 @@ const FavoriteCard = ({ name, price, image, id, onRemove }) => {
                 height: 100,
                 borderRadius: 10,
                 overflow: "hidden",
-                backgroundColor: COLORS.LIGHT_GRAY
 
             }} resizeMode="cover" />
 

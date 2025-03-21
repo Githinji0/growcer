@@ -29,7 +29,14 @@ const Favorites = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.textHeader}>Favorites</Text>
+      <Text style={{
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 10,
+        color: 'black',
+        textAlign: 'left',
+        letterSpacing: 2,
+      }}>Favorites</Text>
       
       {favourites.length === 0 ? (
         <Text style={styles.emptyMessage}>No favorites added yet.</Text>
