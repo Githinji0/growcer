@@ -3,7 +3,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
 import styles from "../styles/home.styles";
 import { useRouter } from "expo-router";
-import { getFavourites, removeFavourites, addFavourites } from "../utils/favorites"; // ✅ Fixed function names
+import { getFavourites, removeFavourites, addFavourites } from "../utils/favorites";
 
 const ProductCard = ({ name, price, image, id }) => {
   const router = useRouter();
