@@ -14,7 +14,7 @@ export const getFavourites = async () => {
 };
 
 // Add a product to favorites
-export const addFavourites = async (id) => {  // ✅ Fixed: Added 'id' as a parameter
+export const addFavourites = async (id) => {  
     try {
         const favourites = await getFavourites();
         if (!favourites.includes(id)) {
